@@ -1,0 +1,40 @@
+# Auto-generated config.Config textproto
+email {}
+server {
+  application_name: "TrailBase"
+  logs_retention_sec: 604800
+}
+auth {
+  auth_token_ttl_sec: 3600
+  refresh_token_ttl_sec: 2592000
+}
+jobs {}
+record_apis: [{
+  name: "authors"
+  table_name: "authors"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "book_genres"
+  table_name: "book_genres"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "books"
+  table_name: "books"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "genres"
+  table_name: "genres"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "list_items"
+  table_name: "list_items"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "lists"
+  table_name: "lists"
+  acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "users"
+  table_name: "users"
+  acl_authenticated: [READ]
+}]
